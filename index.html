@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock paper scissors game</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-header">Rock paper scissors game!</h1>
+      <!-- main container -->
+      <div class="main-container">
+        <!-- header -->
+        <h2 class="status">Draw!</h2>
+
+        <div class="choicesAndScore">
+          <div class="choices">
+            <div class="computerchoice">
+              <i class="fa-solid fa-computer"></i>&nbsp; No choice
+            </div>
+            <div class="userchoice">
+              <i class="fa-solid fa-user"></i>&nbsp; No choice
+            </div>
+          </div>
+          <!-- score section -->
+          <div class="score-section">
+            <div class="userscore">
+              <i class="fa-solid fa-user"></i>&nbsp;score is:
+              <div id="user-score">0</div>
+            </div>
+            <div class="computerscore">
+              <i class="fa-solid fa-computer"></i>&nbsp;score is:
+              <div id="computer-score">0</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- play section -->
+        <div class="game-main">
+          <h3 class="play">Play here!</h3>
+          <div class="images">
+            <img src="assets/Rock.png" alt="rock" id="rock" />
+            <img src="assets/Paper.png" alt="Paper" id="paper" />
+            <img src="assets/Scissors.png" alt="scissors" id="scissors" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

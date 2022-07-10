@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --border-color: #5fbdbc;
+  --bg-color: #fcfcfc;
+  --draw-color: #606060;
+  --loser-color: #e60026;
+  --win-color: #00ff70;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container .main-header {
+  margin: 70px auto;
+  color: var(--border-color);
+  text-align: center;
+  font-weight: 400;
+}
+
+.main-container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+  margin: 30px auto;
+  border-radius: 10px;
+  border: 3px solid var(--border-color);
+}
+
+.main-container h2 {
+  margin: 10px auto;
+  font-weight: 500;
+  color: var(--draw-color);
+}
+
+.choicesAndScore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.choicesAndScore .choices {
+  width: 50%;
+  margin: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.choicesAndScore .choices div {
+  margin: 5px;
+  color: var(--draw-color);
+}
+
+.choicesAndScore .score-section {
+  width: calc(45% - 10px);
+}
+
+.main-container .score-section {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 10px);
+  justify-content: space-between;
+  margin: 10px;
+  align-items: center;
+}
+
+.main-container .score-section .userscore,
+.main-container .score-section .computerscore {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  color: var(--draw-color);
+}
+
+.main-container .score-section .userscore #user-score,
+.main-container .score-section .computerscore #computer-score {
+  margin: 0 10px;
+}
+
+.game-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.game-main img {
+  width: calc(90% / 3);
+  margin: 10px auto;
+}
+
+.game-main img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 500px;
+  }
+  .choicesAndScore {
+    flex-direction: column;
+  }
+  .choicesAndScore .choices {
+    align-items: center;
+    width: 100%;
+  }
+  .main-container .score-section {
+    justify-content: center;
+    align-items: center;
+  }
+}
